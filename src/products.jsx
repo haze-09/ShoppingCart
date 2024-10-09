@@ -11,7 +11,7 @@ export default function Products() {
   return (
     <div className="grid grid-cols-4 gap-4 ">
       {products.map((product)=>(
-        <Card key={product.title} data={product} cart={cart} setCart={setCart}/>
+        <Card key={product.id} data={product} cart={cart} setCart={setCart}/>
       ))}
     </div>
   );
